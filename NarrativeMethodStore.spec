@@ -139,6 +139,7 @@ module NarrativeMethodStore {
     typedef structure {
         int n_rows;
         string placeholder;
+        list <RegexMatcher> regex_constraint;
     } TextAreaOptions;
     
     typedef structure {

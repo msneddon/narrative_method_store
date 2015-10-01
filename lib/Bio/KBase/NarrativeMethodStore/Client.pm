@@ -861,6 +861,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -1028,6 +1029,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -2161,6 +2163,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -2327,6 +2330,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -3137,6 +3141,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -3393,6 +3398,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -3712,6 +3718,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -3968,6 +3975,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -4287,6 +4295,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -4543,6 +4552,7 @@ RegexMatcher is a reference to a hash where the following keys are defined:
 TextAreaOptions is a reference to a hash where the following keys are defined:
 	n_rows has a value which is an int
 	placeholder has a value which is a string
+	regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 IntSliderOptions is a reference to a hash where the following keys are defined:
 	min has a value which is an int
 	max has a value which is an int
@@ -5346,6 +5356,7 @@ regex_constraint has a value which is a reference to a list where each element i
 a reference to a hash where the following keys are defined:
 n_rows has a value which is an int
 placeholder has a value which is a string
+regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 
 </pre>
 
@@ -5356,6 +5367,7 @@ placeholder has a value which is a string
 a reference to a hash where the following keys are defined:
 n_rows has a value which is an int
 placeholder has a value which is a string
+regex_constraint has a value which is a reference to a list where each element is a NarrativeMethodStore.RegexMatcher
 
 
 =end text

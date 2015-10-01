@@ -614,7 +614,33 @@ public class NarrativeMethodData {
 				try {
 					placeholder = (String) getDisplayProp("parameters/" + paramId, paramDisplay, "placeholder");
 				} catch (IllegalStateException e) { }
-				taOpt = new TextAreaOptions().withNRows(nRows).withPlaceholder(placeholder);
+				
+				List<RegexMatcher> regexList = new ArrayList<RegexMatcher>();
+				if(optNode.get("regex_constraint")!=null) {
+					for(int rxi=0; rxi<optNode.get("regex_constraint").size(); rxi++) {
+						JsonNode regex = optNode.get("regex_constraint").get(rxi);
+						if(regex.get("regex")!=null && regex.get("error_text")!=null) {
+							Long match = new Long(1);
+							if(regex.get("match")!=null) {
+								if(regex.get("match").asBoolean()) {
+									match = new Long(1);
+								} else {
+									match = new Long(0);
+								}
+							}
+							regexList.add(
+									new RegexMatcher()
+										.withMatch(match)
+										.withRegex(regex.get("regex").asText())
+										.withErrorText(regex.get("error_text").asText()));
+						}
+					}
+				}
+				
+				taOpt = new TextAreaOptions()
+								.withNRows(nRows)
+								.withPlaceholder(placeholder)
+								.withRegexConstraint(regexList);
 			}
 			TabOptions tabOpt = null;
 			if (paramNode.has("tab_options")) {

@@ -2,6 +2,7 @@
 package us.kbase.narrativemethodstore;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -20,7 +21,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @Generated("com.googlecode.jsonschema2pojo")
 @JsonPropertyOrder({
     "n_rows",
-    "placeholder"
+    "placeholder",
+    "regex_constraint"
 })
 public class TextAreaOptions {
 
@@ -28,6 +30,8 @@ public class TextAreaOptions {
     private Long nRows;
     @JsonProperty("placeholder")
     private String placeholder;
+    @JsonProperty("regex_constraint")
+    private List<RegexMatcher> regexConstraint;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("n_rows")
@@ -60,6 +64,21 @@ public class TextAreaOptions {
         return this;
     }
 
+    @JsonProperty("regex_constraint")
+    public List<RegexMatcher> getRegexConstraint() {
+        return regexConstraint;
+    }
+
+    @JsonProperty("regex_constraint")
+    public void setRegexConstraint(List<RegexMatcher> regexConstraint) {
+        this.regexConstraint = regexConstraint;
+    }
+
+    public TextAreaOptions withRegexConstraint(List<RegexMatcher> regexConstraint) {
+        this.regexConstraint = regexConstraint;
+        return this;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -72,7 +91,7 @@ public class TextAreaOptions {
 
     @Override
     public String toString() {
-        return ((((((("TextAreaOptions"+" [nRows=")+ nRows)+", placeholder=")+ placeholder)+", additionalProperties=")+ additionalProperties)+"]");
+        return ((((((((("TextAreaOptions"+" [nRows=")+ nRows)+", placeholder=")+ placeholder)+", regexConstraint=")+ regexConstraint)+", additionalProperties=")+ additionalProperties)+"]");
     }
 
 }
